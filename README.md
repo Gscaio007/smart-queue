@@ -9,7 +9,7 @@ O projeto simula um cenário real de alta demanda, onde os processos de backgrou
 ## Demonstração do Layout
 
 <p align="center">
-  <img src="./smartqueue-front/src/assets/dashboard.png" alt="Dashboard SmartQueue" width="100%">
+  <img src="./smartqueue-front/src/assets/SmartQueueEmails - LS.png" alt="Dashboard SmartQueue" width="100%">
 </p>
 
 ---
