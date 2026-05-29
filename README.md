@@ -56,6 +56,7 @@ php artisan serve
 # Execute o worker para processar as filas do Redis
 php artisan queue:work
 
+
 #---- Frontend p/ consumo da API ---------
 
 # Clone o repositório do front-end
@@ -66,3 +67,29 @@ npm install
 
 # Inicie o servidor de desenvolvimento
 npm run dev
+
+
+##  Como Testar a API (Postman / Insomnia)
+
+A API possui um endpoint principal para o cadastro e disparo de novas campanhas de e-mail. Como o processamento é assíncrono (utilizando filas com Redis), o retorno da requisição será imediato.
+
+###  Criar Nova Campanha
+
+* **Método:** `POST`
+* **URL:** `http://127.0.0.1:8000/api/campaigns`
+* **Headers:** `Content-Type: application/json`
+
+####  Estrutura do JSON 
+
+Cole o seguinte formato no `Body` (opção `raw` > `JSON`) do seu cliente HTTP:
+
+```json
+{
+    "name": "Exemplo Campanha",
+    "subject": "Exemplo de assunto",
+    "content": "Olá [name], escreva aqui o conteúdo...",
+    "recipients": [
+        {"name": "Exemplo1", "destination": "email@email.com"},
+        {"name": "Exemplo2", "destination": "email2@email.com"}
+    ]
+}
