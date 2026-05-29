@@ -53,7 +53,7 @@ php artisan key:generate
 # Inicie o servidor da API
 php artisan serve
 
-# Execute o worker para processar as filas do Redis
+# Execute o worker para processar as filas do Redis (Se quiser testar o resultado como "pendente de envio" deixe este comando por último)
 php artisan queue:work
 
 
