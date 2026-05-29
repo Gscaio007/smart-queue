@@ -8,8 +8,9 @@ O projeto simula um cenário real de alta demanda, onde os processos de backgrou
 
 ## Demonstração do Layout
 
-![Painel SmartQueue](/public/LS.ico) 
-*(Dica: Substitua este ícone por um print real do seu painel rodando `image_d7dd51.png` para preencher o README)*
+<p align="center">
+  <img src="./smartqueue-front/src/assets/dashboard.png" alt="Dashboard SmartQueue" width="100%">
+</p>
 
 ---
 
