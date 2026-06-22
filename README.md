@@ -1,4 +1,4 @@
-# Landing Smart - SmartQueue
+# SmartQueue - By Landing Smart 
 
 O **SmartQueue** é um ecossistema full-stack desenvolvido para o monitoramento e exibição de filas de atendimento em tempo real, integrado à esteira de disparos assíncronos da **Landing Smart**. 
 
